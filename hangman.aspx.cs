@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -270,6 +270,7 @@ this.E.BackColor = System.Drawing.Color.Red;
         this.Label1.Text = this.P.Text;
     }
 
+
     protected void Button1_Click(object sender, EventArgs e)
     {
 
@@ -278,5 +279,25 @@ this.E.BackColor = System.Drawing.Color.Red;
         InitGame();
            
         
+    }
+
+    protected void Hide_Click(object sender, EventArgs e)
+    {
+        this.Panel2.Visible = false;
+    }
+
+    protected void Enable_Click(object sender, EventArgs e)
+    {
+        this.Panel2.Enabled = true;
+    }
+
+    protected void Show_Click(object sender, EventArgs e)
+    {
+        this.Panel2.Visible= true;
+    }
+
+    protected void Disable_Click(object sender, EventArgs e)
+    {
+        this.Panel2.Enabled= false;
     }
 }

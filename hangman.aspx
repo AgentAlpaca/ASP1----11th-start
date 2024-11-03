@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="hangman.aspx.cs" Inherits="hangman" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="hangman.aspx.cs" Inherits="hangman" %>
 
 <!DOCTYPE html>
 
@@ -98,7 +98,12 @@
   </td>
                     </tr>
                 </table>
+              
                  </asp:Panel>
+            <asp:Button ID="Hide" runat="server" Text="Hide" OnClick="Hide_Click" />
+            <asp:Button ID="Enable" runat="server" Text="Enable" OnClick="Enable_Click" /> <br />
+            <asp:Button ID="Show" runat="server" Text="Show" OnClick="Show_Click" />
+            <asp:Button ID="Disable" runat="server" Text="Disable" OnClick="Disable_Click" />
             
         </div>
     </form>
